@@ -46,11 +46,11 @@ span
 .button1
 {
 	width: 195px;
-    background-color: currentColor;
+    background-color: green;
 }
 .input1
 {
-	width: 432px;
+	width: 436px;
 }
 .span1
 {
@@ -157,4 +157,57 @@ h6{
 }
 .c img{
   width: 80px;
+}
+.zoom{
+  position: relative;
+  overflow: hidden;
+}
+.zoom:hover img{
+  transform: scale(1.1);
+  -moz-transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+
+ box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(79, 177, 239, 0.2);
+
+}
+
+@media (max-width:480px){
+  /* Main Menu Area css
+  ============================================================================================ */
+ .centered {
+    position: absolute;
+    top: 79%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+}
+.input1
+{
+  width: 217px;
+
+  }
+ .button1{
+    width: 126px;
+    background-color: green;
+    margin-left: 218px;
+    margin-top: -38px;
+}
+
+.image2 {
+    width: 228%;
+    height: 610px;
+}
+/*@media (max-width:768px){
+  .button1 {
+    width: 195px;
+    background-color: currentColor;
+    margin-left: 226px;
+    margin-top: -38px;
+}*/
+@media (min-width: 760px)  {
+  .button1 {
+    width: 195px;
+    background-color: currentColor;
+    margin-left: 226px;
+    margin-top: -38px;
+}
 }
