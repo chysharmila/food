@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pages</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="navbar  navbar-expand-lg navbar-light t" >
+		<a class="navbar-brand" href="#"><h3><b>Foodmandu</b></h3></a>
+		<form class="form-inline" action="/action_page.php">
+			<input class="form-control mr-sm-2 a1" type="text" placeholder="Restaurant name or cusine">
+			<button class="btn btn-success text-center" type="submit">Find Restaurants</button>
+		</form>
+			<button class="btn btn-success1" tybe="submit">Login</button>	
+	</nav>
+	<div class="container-fluid">
+	    <div class="row">
+				<img class="img-responsive p1" src="photo/image16.jpg">
+				<div class="content">
+					<div row>
+					    <img class="img-responsive p2" src="photo/food1.jpg" >
+					    <h1 class="h1">Dalle Restaurants:Kamaladi</h1>
+	 				    <div class="col-md-3">
+							<span class="small-title text-white">DELIVERY HOURS</span>
+							<span id="delivery_hours">11:00 AM - 9:30 PM</span>
+							<span>MINIMUM ORDER Rs.400.00</span>
+						</div>
+						
+					</div>
+				</div>		
+		</div> 
+	</div>
+	 <div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light t">
+			<div class="float-left">
+						<ul class="nav ">
+							<li>
+								<a class="nav-link active" href="#">Menu</a>
+							</li>
+							<li>
+								<a class="nav-link " href="about.html">About</a>
+							</li>
+		                    <li>
+								<a class="nav-link " href="#">Review</a>
+							</li>
+	        				<li>
+								<a class="nav-link " href="#">Other Branches</a>
+							</li>
+
+
+						</ul>
+					</div>	
+		</nav>
+	</div><hr>
+
+<!-- 	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="sidenav">
+					<a href="#">CATEGORIES</a><hr>
+					<ul class="nav flex-md-column flex-row" style="list-style: none;">
+						<li><a href="#">Happy Lunch</a></li>
+					    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+					    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+					    <li><a href="#">Happy Lunch</a></li>
+	                    <li><a href="#">Happy Lunch</a></li>
+	                    
+						  
+					</ul> 
+				</div>
+
+			</div>
+			<div class="col-md-8">
+				<form class="f1" action="#">
+				  <input type="text" placeholder="Search food item" name="search">
+				  <button type="submit"><i class="fa fa-search"></i></button>
+				</form><br><br><br>
+				<div class="col-md-10">
+					<ul  style="list-style: none;">
+	                	<li>HAPPY LUNCH</li><hr>
+	                	<li>Chicken Hot Garlic With Rice Rs 400</li><hr>
+	                	<li>Chicken Hot Garlic With Rice Rs 400</li><hr>
+	                	<li>Chicken Hot Garlic With Rice Rs 400</li><hr>
+	                	<li>Chicken Hot Garlic With Rice Rs 400</li><hr>
+	                	<li>Chicken Hot Garlic With Rice Rs 800</li><hr>
+	                	<li>Chicken Hot Garlic With Rice Rs 600</li><hr>
+	                </ul>
+				</div>
+            
+			</div>
+		</div>
+	</div>  -->
+	<div ng-show="tab == 1" class="restaurant-front spinner">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 col-lg-2 menu__category hidden-sm-down sidebar-nav">
+								<span class="small-title hidden-md-up">CATEGORIES</span>
+								<div class="sticky-side">
+									<ul class="nav flex-md-column flex-row">
+										<li class="recommended"><span class="icomoon icon-whatshot icomoon--green"></span><span style="color:forestgreen;">Categories</span></li>
+										<li class="hidden-sm-down"><div class="dropdown-divider"></div></li>
+										<li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category9706" class="ng-binding">Happy Lunch</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6586" class="ng-binding">Mo:Mo ( Steam )</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6587" class="ng-binding">Mo:Mo ( Kothey )</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6588" class="ng-binding">Mo:Mo ( Fried )</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6589" class="ng-binding">Mo:Mo ( C )</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6590" class="ng-binding">Chowmein</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category9101" class="ng-binding">Mo:Mo Jhol</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6591" class="ng-binding">Thukpa</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6592" class="ng-binding">Fried Rice</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6593" class="ng-binding">Chopsuey</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6594" class="ng-binding">Rice Curry</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category6595" class="ng-binding">Dalle Bowl</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category7340" class="ng-binding">Snacks</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category7366" class="ng-binding">Kids Menu</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category9585" class="ng-binding">Dallecious Summer Snacks</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category9586" class="ng-binding">Kathmandu Favourites</a>
+										</li><li ng-repeat="itm in products" style="margin-bottom: 0.5rem !important;" class="ng-scope">
+											<a href="#Category9584" class="ng-binding">Value Meal</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-sm-12 col-md-8 col-lg-7 menu__list">
+								<div class="row menu__header" ng-hide="GetState('BAG')">
+									<div class="col-12 menu__category hidden-md-up sidebar-nav">
+										<div class="select-dropdown mb-1 d-inline-block" style="width:100%;">
+											<select name="sort" class="form-control select" onchange="location.hash = this.value;">
+												<option ng-repeat="itm in products" value="#Category9706" class="ng-binding ng-scope" style="">Happy Lunch</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6586" class="ng-binding ng-scope">Mo:Mo ( Steam )</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6587" class="ng-binding ng-scope">Mo:Mo ( Kothey )</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6588" class="ng-binding ng-scope">Mo:Mo ( Fried )</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6589" class="ng-binding ng-scope">Mo:Mo ( C )</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6590" class="ng-binding ng-scope">Chowmein</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category9101" class="ng-binding ng-scope">Mo:Mo Jhol</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6591" class="ng-binding ng-scope">Thukpa</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6592" class="ng-binding ng-scope">Fried Rice</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6593" class="ng-binding ng-scope">Chopsuey</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6594" class="ng-binding ng-scope">Rice Curry</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category6595" class="ng-binding ng-scope">Dalle Bowl</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category7340" class="ng-binding ng-scope">Snacks</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category7366" class="ng-binding ng-scope">Kids Menu</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category9585" class="ng-binding ng-scope">Dallecious Summer Snacks</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category9586" class="ng-binding ng-scope">Kathmandu Favourites</option><!-- end ngRepeat: itm in products --><option ng-repeat="itm in products" value="#Category9584" class="ng-binding ng-scope">Value Meal</option><!-- end ngRepeat: itm in products -->
+											</select>
+										</div>
+									</div>
+
+									<div class="col-12 col-lg-12 col-sm-12">
+										<span style="color:red;" ng-show="vendorInfo.IsVendorClosed &amp;&amp; vendorInfo.CloseNotice" class="ng-hide"><b class="ng-binding">We are unable to take order from this restaurant at the moment : </b></span>
+
+										<div class="menu__search">
+											<div class="input-group has-feedback">
+												<input type="search" class="form-control ng-pristine ng-valid ng-empty ng-touched" ng-model="query" placeholder="Search Food Items" style="">
+												<span class="input-group-addon icomoon icon-search" style="background-color:none;" title="search"></span>
+
+											</div>
+										</div>
+									</div>
+									
+								</div><!-- .menu__header -->
+								<div class="clearfix"></div>
+
+								<div class="menu__content wrap">
+									
+									
+									
+
+									<br>
+
+									<!-- ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope" style="">
+										<div id="Category9706" class="list-header wrap red">
+											<div class="ng-binding">Happy Lunch</div>
+											<div class="description dim ng-binding"></div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Hot Garlic With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding">245.00</span>
+													<span class="ng-binding">208.25</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Manchurian With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding">245.00</span>
+													<span class="ng-binding">208.25</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Tofu Hot Garlic With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding">215.00</span>
+													<span class="ng-binding">182.75</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Chowmein With Chicken Mo:Mo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding">195.00</span>
+													<span class="ng-binding">165.75</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Chowmein With Veg Mo:Mo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding">165.00</span>
+													<span class="ng-binding">140.25</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Manchurian With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding">215.00</span>
+													<span class="ng-binding">182.75</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6586" class="list-header wrap red">
+											<div class="ng-binding">Mo:Mo ( Steam )</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Mo:Mo ( Steam )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Mo:Mo ( Steam )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">255.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Mo:Mo ( Steam )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Mo:Mo ( Steam )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6587" class="list-header wrap red">
+											<div class="ng-binding">Mo:Mo ( Kothey )</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Mo:Mo ( Kothey )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Mo:Mo ( Kothey )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Mo:Mo ( Kothey )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">285.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Mo:Mo ( Kothey )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">225.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6588" class="list-header wrap red">
+											<div class="ng-binding">Mo:Mo ( Fried )</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Mo:Mo ( Fried )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">255.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Mo:Mo ( Fried )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Mo:Mo ( Fried )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Mo:Mo ( Fried )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">215.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6589" class="list-header wrap red">
+											<div class="ng-binding">Mo:Mo ( C )</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Mo:Mo ( C )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Mo:Mo ( C )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">Steam / Fried</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">285.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Mo:Mo ( C )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">Steam / Fried</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">295.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Mo:Mo ( C )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">Steam / Fried</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">235.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6590" class="list-header wrap red">
+											<div class="ng-binding">Chowmein</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. 
+</div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Chowmein</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">255.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Chowmein</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Egg Chowmein</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Mixed Chowmein</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">285.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Chowmein</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Chowmein</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">225.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category9101" class="list-header wrap red">
+											<div class="ng-binding">Mo:Mo Jhol</div>
+											<div class="description dim ng-binding">The hot sauce will be available if Mentioned in the Special Note.</div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Mo:Mo ( Jhol )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">255.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Mo:Mo ( Jhol )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Mo:Mo ( Jhol )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Mo:Mo ( Jhol )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">215.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6591" class="list-header wrap red">
+											<div class="ng-binding">Thukpa</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Thukpa</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">250.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Thukpa</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">260.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Egg Thukpa</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">240.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Mixed Thukpa</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">280.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Thukpa</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">270.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Thukpa</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">220.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6592" class="list-header wrap red">
+											<div class="ng-binding">Fried Rice</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Fried Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">255.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Fried Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Egg Fried Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Mixed Fried Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">285.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Fried Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Fried Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">225.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6593" class="list-header wrap red">
+											<div class="ng-binding">Chopsuey</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Chopsuey</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Chopsuey</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">285.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Egg Chopsuey</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Mixed Chopsuey</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">305.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Chopsuey</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">295.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Chopsuey</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6594" class="list-header wrap red">
+											<div class="ng-binding">Rice Curry</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Rice Curry</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">305.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Egg Rice Curry</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">265.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Rice Curry</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">325.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Rice Curry</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">215.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category6595" class="list-header wrap red">
+											<div class="ng-binding">Dalle Bowl</div>
+											<div class="description dim ng-binding">The hot sauce will be available if  Mentioned in the Special Note. </div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Dalle Bowl (Non-Veg) (Rice or Noodles)</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">Rice or Noodles</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">325.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Dalle Bowl (Rice or Noodles )</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">Rice or Noodles</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">275.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category7340" class="list-header wrap red">
+											<div class="ng-binding">Snacks</div>
+											<div class="description dim ng-binding">The hot sauce will be available if Mentioned in the Special Note.</div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Aloo Dum</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">145.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Aloo Sandkeko</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Buff Chilly</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">365.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Cheese Balls</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">365.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Cheese Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">365.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Chilly</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">365.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Sadheko</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">305.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Strips</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">405.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Curly Fries</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">305.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Dalle Infused Hot Wings</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">12 Pcs</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">705.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Dalle Infused Hot Wings</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">6 Pcs.</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">385.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">French Fries</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Honey Glazed Sesame Wings</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">6 Pieces.</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">385.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Honey Glazed Sesame Wings</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">12 Pcs.</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">705.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Mushroom Chilly</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">305.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Pork Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">285.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Potato Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Tofu Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category7366" class="list-header wrap red">
+											<div class="ng-binding">Kids Menu</div>
+											<div class="description dim ng-binding"></div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Non Veg Combo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">Chicken Mo:Mo, Chicken Nuggets, Fries)
+	
+(ALL COMBO INCLUDES MILO)
+</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">305.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Combo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">(Veg Mo:Mo, Potato Croquettes, Fries)
+	
+(ALL COMBO INCLUDES MILO)
+</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category9585" class="list-header wrap red">
+											<div class="ng-binding">Dallecious Summer Snacks</div>
+											<div class="description dim ng-binding"></div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Nuggets</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">255.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Crispy Chicken Wonton In Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Golden Crispy Chicken Wonton Fry</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Home Made Fries</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">155.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Home Made Fries Large</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Home Made Fries Medium</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">185.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Potato Croquette</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category9586" class="list-header wrap red">
+											<div class="ng-binding">Kathmandu Favourites</div>
+											<div class="description dim ng-binding"></div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Dallecious Infused Chicken Choila</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">With choice of Fried Rice / Chowmein</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Dallecious Mushroom Choila </span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">With choice of Fried Rice / Chowmein</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">225.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Masala Buff Jhol Mo:Mo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">185.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Masala Chicken Jhol Mo:Mo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">205.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products --><div ng-show="filteredproducts.length" ng-repeat="cat in products" class="ng-scope">
+										<div id="Category9584" class="list-header wrap red">
+											<div class="ng-binding">Value Meal</div>
+											<div class="description dim ng-binding"></div>
+										</div>
+										<ul class="nav flex-column menu__items">
+											<!-- ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">With choice of Veg fried rice / veg chowmein</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Hot Garlic WIth Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Chicken Manchurian With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">245.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Mushroom Chilli</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding">With choice of Veg fried rice / veg chowmein</span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">215.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Tofu Hot Garlic With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">215.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Chowmein With Chicken Mo:Mo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">195.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Chowmein With Veg Mo:Mo</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">165.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) --><li class="d-flex justify-content-between ng-scope" data-ng-repeat="product in filteredproducts=(cat.items|filter:query)" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);">
+												<div class="d-flex flex-column" id="Product">
+													<div class="d-flex align-items-center">
+														<a href="javascript:;">
+															<span class="mr-2 ng-binding">Veg Manchurian With Rice</span>
+														</a>
+													</div>
+													<div class="small dim"><span ng-bind-html="product.productDesc" class="ng-binding"></span></div>
+												</div>
+												<div class="menu__price">
+													<span ng-show="product.oldprice>0" class="ng-hide">Rs. </span>
+													<span ng-show="product.oldprice>0" class="discount ng-binding ng-hide">0.00</span>
+													<span class="ng-binding">215.00</span>
+													<a href="javascript:;" ng-click="$event.preventDefault();$event.stopPropagation();ShowAddUpdateItemDialog(product);"><span class="icomoon icon-add-circle icomoon--green"></span></a>
+												</div>
+											</li><!-- end ngRepeat: product in filteredproducts=(cat.items|filter:query) -->
+										</ul>
+										<!--this div is shown only in mobile view on adding/updating items-->
+										<!--add/update notification start-->
+										<div class="addItemParent ng-hide" ng-show="false">
+											<p class="text-center addItemText">Item added successfully</p>
+										</div>
+										<!--end of add/update notification-->
+									</div><!-- end ngRepeat: cat in products -->
+								</div>
+								<!-- .menu__content -->
+
+							</div>
+							<!-- .menu__list -->
+
+
+
+
+						</div>
+						<!-- .row -->
+
+					</div>
+					<!-- .container -->
+					<div class="spinner__loader ng-hide" ng-show="loading()" style="">
+						<div class="spinner__circle"></div>
+					</div>
+				</div>
+
+</body>
+</html>
